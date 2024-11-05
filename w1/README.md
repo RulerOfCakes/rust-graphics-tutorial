@@ -28,5 +28,7 @@ These are optional materials that you can look into if you want to learn more ab
 
 ### Graphics
 
+We won't be touching too much of fundamental graphics concepts this week as it will be more about coding, but if you are interested in learning more about it, here are some resources you can look into.
+
 - [The Book Of Shaders](https://thebookofshaders.com/)
 - [Raytracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
