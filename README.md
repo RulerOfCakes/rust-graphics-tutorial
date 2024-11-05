@@ -1,4 +1,4 @@
-# rust-graphics-tutorial
+# Rust Graphics Tutorial
 
 ![Warning](https://img.shields.io/badge/Warning-Work%20in%20Progress-red)
 
