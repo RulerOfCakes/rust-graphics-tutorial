@@ -180,10 +180,11 @@ mod tests {
             z: 10,
         });
 
-        ca_445_m.cells[5][5][5] = Cell(5);
-        ca_445_m.cells[5][5][6] = Cell(5);
-        ca_445_m.cells[7][5][5] = Cell(5);
-        ca_445_m.cells[7][5][6] = Cell(5);
+        ca_445_m.cells[5][5][5] = Cell(1);
+        ca_445_m.cells[5][5][6] = Cell(1);
+        ca_445_m.cells[7][5][5] = Cell(1);
+        ca_445_m.cells[7][5][6] = Cell(1);
+        ca_445_m.cells[0][0][0] = Cell(5);
 
         ca_445_m.step();
         // newborn
@@ -191,10 +192,12 @@ mod tests {
         assert_eq!(ca_445_m.cells[6][5][6].0, 5);
         // shouldn't be born
         assert_eq!(ca_445_m.cells[6][5][7].0, 0);
+        // dead
+        assert_eq!(ca_445_m.cells[5][5][5].0, 0);
+        assert_eq!(ca_445_m.cells[5][5][6].0, 0);
+        assert_eq!(ca_445_m.cells[7][5][5].0, 0);
+        assert_eq!(ca_445_m.cells[7][5][6].0, 0);
         // dying
-        assert_eq!(ca_445_m.cells[5][5][5].0, 4);
-        assert_eq!(ca_445_m.cells[5][5][6].0, 4);
-        assert_eq!(ca_445_m.cells[7][5][5].0, 4);
-        assert_eq!(ca_445_m.cells[7][5][6].0, 4);
+        assert_eq!(ca_445_m.cells[0][0][0].0, 4);
     }
 }
