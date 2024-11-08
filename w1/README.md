@@ -8,6 +8,7 @@ We won't go too much into the basic syntax or concepts of the language, as there
 - Basic understanding of programming concepts
 - Experience in programming with at least one other programming language to at least an intermediate level
 - Install [Rust!](https://rustup.rs/)
+- Install [Node.js](https://nodejs.org/en/) 
 - Recommended: Complete [Rustlings](https://github.com/rust-lang/rustlings), although excercises about threads and onwards are optional.
 
 Also for this week, we will be touching a bit of Javascript and WebAssembly to visualize our results on the web. I will be providing most of the code regarding this part, but if you are absolutely new to JS, I recommend you to look into some basic tutorials.
@@ -32,3 +33,8 @@ We won't be touching too much of fundamental graphics concepts this week as it w
 
 - [The Book Of Shaders](https://thebookofshaders.com/)
 - [Raytracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
+
+
+## Credits
+- [Learning to Fly](https://pwy.io/posts/learning-to-fly-pt1/) by [Patryk](https://github.com/patryk27)
+- [3D Cellular Automata](https://softologyblog.wordpress.com/2019/12/28/3d-cellular-automata-3/) by Softology

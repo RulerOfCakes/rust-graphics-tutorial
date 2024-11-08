@@ -6,6 +6,7 @@
 - 프로그래밍에 대한 기초적인 지식
 - 최소 1개 이상의 언어를 깊게 사용한 프로그래밍 경험
 - [러스트](https://rustup.rs/) 설치하기
+- [Node.js](https://nodejs.org/en/) 설치하기
 - 추천: [Rustlings](https://github.com/rust-lang/rustlings) 튜토리얼을 완료하세요. 그 중 난이도가 높은 쓰레드나 이후 개념들에 대한 파트는 스킵해도 괜찮습니다.
 
 ## 참고 자료
@@ -22,3 +23,12 @@
     - 이번 주의 내용이 이 글로부터 큰 영감을 받았습니다. 감사합니다!
 
 ### Graphics
+
+이번 주에는 주로 코딩에 집중할 예정이기 때문에 그래픽스의 기본적인 개념들은 다루지 않을 것입니다. 하지만 그래픽스에 대해 더 알아보고 싶다면 아래 자료들을 참고하시면 됩니다.
+
+- [The Book Of Shaders](https://thebookofshaders.com/)
+- [Raytracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
+
+## 크레딧
+- [Learning to Fly](https://pwy.io/posts/learning-to-fly-pt1/) by [Patryk](https://github.com/patryk27)
+- [3D Cellular Automata](https://softologyblog.wordpress.com/2019/12/28/3d-cellular-automata-3/) by Softology
