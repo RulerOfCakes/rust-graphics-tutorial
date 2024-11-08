@@ -18,10 +18,13 @@ impl Neighborhood {
                             if i == 0 && j == 0 && k == 0 {
                                 continue;
                             }
-                            let x = x.saturating_add_signed(i);
-                            let y = y.saturating_add_signed(j);
-                            let z = z.saturating_add_signed(k);
-                            neighbors.push((x, y, z));
+                            let nx = x.checked_add_signed(i);
+                            let ny = y.checked_add_signed(j);
+                            let nz = z.checked_add_signed(k);
+                            if nx.is_none() || ny.is_none() || nz.is_none() {
+                                continue;
+                            }
+                            neighbors.push((nx.unwrap(), ny.unwrap(), nz.unwrap()));
                         }
                     }
                 }
@@ -38,10 +41,13 @@ impl Neighborhood {
                             if i.abs() + j.abs() + k.abs() > 1 {
                                 continue;
                             }
-                            let x = x.saturating_add_signed(i);
-                            let y = y.saturating_add_signed(j);
-                            let z = z.saturating_add_signed(k);
-                            neighbors.push((x, y, z));
+                            let nx = x.checked_add_signed(i);
+                            let ny = y.checked_add_signed(j);
+                            let nz = z.checked_add_signed(k);
+                            if nx.is_none() || ny.is_none() || nz.is_none() {
+                                continue;
+                            }
+                            neighbors.push((nx.unwrap(), ny.unwrap(), nz.unwrap()));
                         }
                     }
                 }

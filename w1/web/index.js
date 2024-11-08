@@ -72,7 +72,11 @@ camera.lookAt(
 
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
-controls.target.set(0.5, 0.5, 0.5);
+controls.target.set(
+  (0.5 * ruleConfig.x) / 10,
+  (0.5 * ruleConfig.y) / 10,
+  (0.5 * ruleConfig.z) / 10
+);
 
 // Render Loop
 const clock = new THREE.Clock();
